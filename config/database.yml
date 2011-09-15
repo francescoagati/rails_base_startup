@@ -1,0 +1,37 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: _dev
+  pool: 5
+  username: u
+  password: p
+  socket: /tmp/mysql.sock
+  host: h
+
+
+staging:
+  adapter: mysql2
+  encoding: utf8
+  database: _dev
+  pool: 5
+  username: u
+  password: p
+  socket: /tmp/mysql.sock
+  host: h
+  
+test:
+  adapter: sqlite3
+  database: db/test.sqlite3
+  pool: 5
+  timeout: 5000
+
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  database: _dev
+  pool: 5
+  username: u
+  password: p
+  socket: /tmp/mysql.sock
+  host: h
